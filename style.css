@@ -1,0 +1,173 @@
+
+/* BDDY AND ELEMENTS*/
+
+body {
+	font-family: 'Bebas Neue', cursive;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	background-color: #FBFBFB;
+}
+
+
+button {
+
+	font-family: 'Bebas Neue', cursive;
+	color: white;
+	font-size: 3rem;
+	border-radius: 5px 30px;
+	background: #5383E8;
+	border: none;
+	padding: 1rem 5rem;
+	box-shadow: black 2px 2px 1px, black 5px 5px 5px;
+}
+
+button:focus {
+
+	outline: none;
+
+}
+
+/*HERO SECTION*/
+
+.hero {
+
+	 
+
+	background: black url('images/hero.png') center center;
+	background-size: cover;
+
+}
+
+.hero-container {
+
+	position: relative;
+
+	height: 100vh;
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.hero img {
+
+	height: 10rem;
+	margin-bottom: -3rem;
+
+}
+
+.hero h1 {
+
+	font-size: 4rem;
+	font-family: 'Bebas Neue', cursive;
+	text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 5px 5px 5px #000;
+	color: #F3D972;
+
+}
+
+/* BODY OF THE WEBSITE */
+
+/* ABOUT ME SECTION */
+
+main {
+
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 10%;
+
+	background-color: #151515;
+	color: white;
+
+}
+
+/* Cads */
+
+.cards {
+
+	padding-top: -2rem;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 15px;
+
+	overflow: wrap;
+
+}
+
+.cards h3 {
+	height: auto;
+	width: 50%;
+	font-size: 2rem;
+
+}
+
+#card1 {
+
+	margin-top: 2rem;
+
+}
+
+#card1 h3 {
+
+	margin-left: 2rem;
+
+}
+
+#card1 img {
+
+	min-width: 250px;
+	width: 25%;
+
+}
+
+#card2 {
+
+	flex-direction: column;
+
+}
+
+#card2 img {
+
+	min-width: 200px;
+	max-width: 50%;
+
+}
+
+#card3 {
+	padding: 0;
+	margin: 0;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+
+}
+
+.testimonios {
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+
+	flex-direction: column;
+	background-color: red;
+
+}
+
+.testimonios img {
+
+	height: 150px;
+
+}
