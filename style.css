@@ -148,7 +148,7 @@ strong {
 }
 
 .carousel .icon {
-	width: 200px;
+	width: 150px;
 	height: auto;
 	object-fit: fill;
 }
@@ -182,10 +182,6 @@ strong {
 
 .dot:hover {
 	cursor: pointer;
-	background: rgba(250, 250, 250, 75%);
-}
-
-.dot .active {
 	background: rgba(250, 250, 250, 75%);
 }
 
