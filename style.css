@@ -28,7 +28,7 @@ strong {
 	color: white;
 
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 
 	background: black url('images/hero.jpg');
 	background-size: cover;
@@ -37,7 +37,7 @@ strong {
 
 .hero-overlay {
 	background: linear-gradient(0deg, rgba(21, 21, 21, 100%), rgba(21, 21, 21, 0%));
-	height: 100%;
+	height: 101%;
 	width: 100%;
 	display: flex;
 }
@@ -79,7 +79,7 @@ strong {
 .divider {
 
 	height: 25vh;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -164,7 +164,11 @@ strong {
 	align-items: center;
 	text-align: center;
 
-	width: 100vw; 
+	width: 100%; 
+}
+
+.champs h3 {
+	margin: 1rem;
 }
 
 .cards {
@@ -226,22 +230,23 @@ strong {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	text-align: center;
 
 	height: 100vh;
-	padding: 0 10%;
+	width: 100%;
 	background-color: #E5D4D4;
 }
 
 .ad h2 {
+	margin: 1rem;
 	text-shadow: rgba(0, 0, 0, 25%) 2px 2px 10px, rgba(0, 0, 0, 25%) -2px -2px 10px;
 }
 .ad img {
 	object-fit: contain;
-	background: red;
-	width: 100%;
-
 	border-radius: 5px;
+	max-width: 75%;
+	max-height: 75%;
 	box-shadow: rgba(0, 0, 0, 25%) 2px 2px 10px, rgba(0, 0, 0, 25%) -2px -2px 10px;
 }
 
@@ -256,4 +261,85 @@ footer {
 	display: flex;
 	justify-content: center;
 	color: teal;
+}
+
+/* BUTTONS */
+
+.start:hover {
+	transition: 0.1s ease;
+	transform: translate(0, -0.5rem) scale(1.1);
+	background-color: #EEF1FF;
+	color: #A4B6FF;
+
+	transform-style: preserve-3d;
+}
+
+/* MEDIA QUERIES */
+/* DESKTOP */
+@media screen and (min-width: 550px) {
+	
+	/* ELEMENTS */
+
+	h2 {
+	font-size: 4rem;
+	font-family: 'Staatliches', cursive;
+	}
+
+	/* HERO */
+
+	.hero {
+		background-origin: center center;
+	}
+
+	.hero h1 {
+		font-size: 2.75rem;
+	}
+
+	.hero strong {
+		font-size: 3.5rem;
+	}
+
+	.hero .start {
+		align-self: flex-start;
+		margin-left: 3rem;
+	}
+
+	/* COACH */
+
+	.conoce-coach h3{
+		font-size: 2rem;
+		padding: 0 10%;
+	}
+
+	/* CAROUSEL */
+
+	.carousel h3 {
+		font-size: 2rem;
+	}
+
+	/* CHAMPS */
+	.card {
+	max-width: 20%;
+	} 
+
+	/*AD*/
+
+	.ad img {
+		max-width: 50%;
+		max-height: 50%;
+	}
+
+	/* BUTTONS */
+
+	.start {
+		font-size: 4rem;
+	}
+}
+
+/* CARDS SIZE */
+
+@media screen and (min-width: 950px) {
+	.card {
+	max-width: 250px;
+	} 
 }
