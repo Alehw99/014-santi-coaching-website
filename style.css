@@ -277,7 +277,69 @@ footer {
 /* MEDIA QUERIES */
 /* DESKTOP */
 @media screen and (min-width: 550px) {
-	.hero {
-		display: none;
+	
+	/* ELEMENTS */
+
+	h2 {
+	font-size: 4rem;
+	font-family: 'Staatliches', cursive;
 	}
+
+	/* HERO */
+
+	.hero {
+		background-origin: center center;
+	}
+
+	.hero h1 {
+		font-size: 2.75rem;
+	}
+
+	.hero strong {
+		font-size: 3.5rem;
+	}
+
+	.hero .start {
+		align-self: flex-start;
+		margin-left: 3rem;
+	}
+
+	/* COACH */
+
+	.conoce-coach h3{
+		font-size: 2rem;
+		padding: 0 10%;
+	}
+
+	/* CAROUSEL */
+
+	.carousel h3 {
+		font-size: 2rem;
+	}
+
+	/* CHAMPS */
+	.card {
+	max-width: 20%;
+	} 
+
+	/*AD*/
+
+	.ad img {
+		max-width: 50%;
+		max-height: 50%;
+	}
+
+	/* BUTTONS */
+
+	.start {
+		font-size: 4rem;
+	}
+}
+
+/* CARDS SIZE */
+
+@media screen and (min-width: 950px) {
+	.card {
+	max-width: 250px;
+	} 
 }
